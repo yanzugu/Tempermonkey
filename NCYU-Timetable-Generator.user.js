@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         NCYU-Timetable-Generator
+// @description  於選課結果查詢頁面產生課表
 // @version      0.2
 // @namespace    https://github.com/yanzugu/Tempermonkey
 // @updateURL    https://github.com/yanzugu/Tempermonkey/raw/main/NCYU-Timetable-Generator.user.js
 // @downloadURL  https://github.com/yanzugu/Tempermonkey/raw/main/NCYU-Timetable-Generator.user.js
-// @description  於選課結果查詢頁面產生課表
 // @author       yanzugu
 // @include      /^https://web08503.\.adm\.ncyu\.edu\.tw/stu_selq02\.aspx*/
 // @grant        none

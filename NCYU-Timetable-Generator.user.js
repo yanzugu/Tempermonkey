@@ -6,6 +6,8 @@
 // @author       yanzugu
 // @include      /^https://web08503.\.adm\.ncyu\.edu\.tw/stu_selq02\.aspx*/
 // @grant        none
+// @updateURL    https://github.com/yanzugu/Tempermonkey/blob/main/NCYU-Timetable-Generator.user.js
+// @downloadURL  https://github.com/yanzugu/Tempermonkey/blob/main/NCYU-Timetable-Generator.user.js
 // @require      http://code.jquery.com/jquery-3.4.1.min.js
 // ==/UserScript==
 

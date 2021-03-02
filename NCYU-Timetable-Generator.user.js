@@ -2,7 +2,7 @@
 // @name         NCYU-Timetable-Generator
 // @version      0.2
 // @namespace    https://github.com/yanzugu/Tempermonkey
-// @updateURL    https://github.com/yanzugu/Tempermonkey/raw/main/NCYU-Timetable-Generator.user.js
+// @updateURL    https://github.com/yanzugu/Tempermonkey/raw/main/NCYU-Timetable-Generator.meta.js
 // @downloadURL  https://github.com/yanzugu/Tempermonkey/raw/main/NCYU-Timetable-Generator.user.js
 // @description  Create school timetable
 // @author       yanzugu

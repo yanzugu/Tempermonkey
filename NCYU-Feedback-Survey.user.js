@@ -5,6 +5,8 @@
 // @description  End boring survey quickly
 // @author       yanzugu
 // @match        https://web085004.adm.ncyu.edu.tw/Survey/Srv_StuSel.aspx
+// @updateURL    https://github.com/yanzugu/Tempermonkey/blob/main/NCYU-Feedback-Survey.user.js
+// @downloadURL  https://github.com/yanzugu/Tempermonkey/blob/main/NCYU-Feedback-Survey.user.js
 // @grant        none
 // ==/UserScript==
 var options = {

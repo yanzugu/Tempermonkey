@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NCYU-Timetable-Generator
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Create school timetable
 // @author       yanzugu
 // @include      /^https://web08503.\.adm\.ncyu\.edu\.tw/stu_selq02\.aspx*/

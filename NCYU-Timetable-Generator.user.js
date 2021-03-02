@@ -58,8 +58,6 @@
     }
 
     table = document.createElement('table');
-    table.setAttribute('style', "border-collapse:collapse; margin:auto; width: 100%");
-    table.setAttribute('dir', 'rtl');
     table.classList.add('mytable');
 
     var el = '<thead><tr class="mytr"><th class="myth"></th>';
@@ -99,18 +97,17 @@
     table.innerHTML = el;
 
     var div = document.createElement('div');
-    div.setAttribute('style', 'width:50%; margin: auto');
     div.setAttribute('id', 'tab');
     div.appendChild(table);
 
     var button = document.createElement('BUTTON');
-    button.innerHTML = "列印課表";
+    button.innerHTML = "輸出課表";
     button.setAttribute('style', 'magrin: auto; margin-top: 10px');
     button.addEventListener('click', function () {
         var sTable = document.getElementById('tab').innerHTML;
 
         // CREATE A WINDOW OBJECT.
-        var win = window.open('', '', 'height=1000,width=1000');
+        var win = window.open('', '', 'height=1000, width=1000');
         var title = '<title>課表_' + Date.now() + '</title>';
 
         win.document.write('<html><head>');
@@ -129,10 +126,14 @@
     body.appendChild(button);
 
 
-    var style = 'border: 2px solid #000;width: 12.5%;font-size: 13px;text-align: center; white-space: pre-line;';
+    var style = 'border: 2px solid #000; width: 12.5%; font-size: 13px; text-align: center; white-space: pre-line;';
     $('.mytr').attr('style', style);
+    $('.mytr').attr('dir', 'ltr');
     $('.myth').attr('style', style + 'height: 50px;');
-    $('.mytd').attr('style', style + 'height: 80px;');
+    $('.mytd').attr('style', style + 'height: 80px;');  
+    $('.mytable').attr('style', 'border-collapse:collapse; margin:auto; width: 100%;');
+    $('.mytable').attr('dir', 'rtl');
+    $('#tab').attr('style', 'width:50%; margin: auto');
 
     // Your code here...
 })();

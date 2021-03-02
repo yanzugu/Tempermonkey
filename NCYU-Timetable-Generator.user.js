@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         NCYU-Timetable-Generator
-// @namespace    http://tampermonkey.net/
 // @version      0.2
-// @updateURL    https://github.com/yanzugu/Tempermonkey/blob/main/NCYU-Timetable-Generator.meta.js
-// @downloadURL  https://github.com/yanzugu/Tempermonkey/blob/main/NCYU-Timetable-Generator.user.js
+// @namespace    https://github.com/yanzugu/Tempermonkey
+// @updateURL    https://github.com/yanzugu/Tempermonkey/raw/main/NCYU-Timetable-Generator.user.js
+// @downloadURL  https://github.com/yanzugu/Tempermonkey/raw/main/NCYU-Timetable-Generator.user.js
 // @description  Create school timetable
 // @author       yanzugu
 // @include      /^https://web08503.\.adm\.ncyu\.edu\.tw/stu_selq02\.aspx*/

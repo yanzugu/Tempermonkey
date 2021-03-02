@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         NCYU-Timetable-Generator
-// @version      0.2
+// @version      0.3
 // @namespace    https://github.com/yanzugu/Tempermonkey
 // @updateURL    https://github.com/yanzugu/Tempermonkey/raw/main/NCYU-Timetable-Generator.meta.js
 // @downloadURL  https://github.com/yanzugu/Tempermonkey/raw/main/NCYU-Timetable-Generator.user.js

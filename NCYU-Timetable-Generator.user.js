@@ -38,11 +38,14 @@
         '7': 7,
         '8': 8
     };
+
+    // 創建課表陣列 => 節數 * 天數
     var classes = new Array(9);
     for (let i = 0; i < classes.length; i++) {
         classes[i] = new Array(7);
     }
 
+    // 抓取課程表格
     for (let i = 1; i < trs.length; i++) {
         let tds = trs[i].getElementsByTagName('td');
         let className = tds[3].innerHTML;
@@ -50,8 +53,8 @@
         let period = tds[14].innerHTML;
         let classRoom = tds[16].innerHTML;
 
-        for (let t = 0; t < Math.trunc(day.length / 2); t++) {
-            for (let p = period2Num[period[t * 4 + 0]]; p <= period2Num[period[t * 4 + 2]]; p++) {
+        for (let t = 0; t < Math.trunc(day.length / 2); t++) {  // 日
+            for (let p = period2Num[period[t * 4 + 0]]; p <= period2Num[period[t * 4 + 2]]; p++) {  // 開始節次 ~ 結束節次
                 classes[p][day2Num[day[t * 2]]] = className + '\n\n' + classRoom;
             }
         }

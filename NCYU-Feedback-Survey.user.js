@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NCYU-Feedback-Survey
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  End boring survey quickly
 // @author       yanzugu
 // @match        https://web085004.adm.ncyu.edu.tw/Survey/Srv_StuSel.aspx
@@ -17,12 +17,22 @@ var options = {
     '4': ['2,1', '4,-10', '4,0'],
     '5': ['5,1', '5,-10', '5,0']
 };
+
+var optionsText = {
+    '0': '0',
+    '1': '1: 非常同意',
+    '2': '2: 同意',
+    '3': '3: 普通',
+    '4': '4: 不同意',
+    '5': '5: 非常不同意'
+};
+
 (function() {
     'use strict';
     var body = document.body;
     var selects = document.getElementsByTagName('select');
     var select = document.createElement('select');
-    select.setAttribute('style', 'margin-left:30%; height:40px; width:80px')
+    select.setAttribute('style', 'left:20%; height:40px; width:120px; position:fixed; top:20%')
     select.addEventListener("change", function() {
     	for (let i = 0; i < selects.length; i++) {
             for (let j = 0; j < selects[i].options.length; j++) {
@@ -40,10 +50,14 @@ var options = {
                 }
             }
         }
+        window.scrollTo({
+            top: 1000,
+            behavior: "smooth"
+        });
     });
     Object.keys(options).forEach(function(key) {
         let option = document.createElement("option");
-        option.text = key;
+        option.text = optionsText[key];
         option.value = key;
         select.add(option);
     });

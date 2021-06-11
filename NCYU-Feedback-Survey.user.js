@@ -32,7 +32,7 @@ var optionsText = {
     var body = document.body;
     var selects = document.getElementsByTagName('select');
     var select = document.createElement('select');
-    select.setAttribute('style', 'left:20%; height:40px; width:120px; position:fixed; top:20%')
+    select.setAttribute('style', 'left:20%; height:40px; width:120px; position:fixed; top:20%');
     select.addEventListener("change", function() {
     	for (let i = 0; i < selects.length; i++) {
             for (let j = 0; j < selects[i].options.length; j++) {
